@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Parallax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>Simple Parallax Website</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore optio nam quibusdam eos modi accusantium corporis explicabo neque repellat dolorum voluptates, facilis illo, consequuntur iste veniam blanditiis harum. Dolorem beatae eaque qui quas pariatur? Sequi incidunt debitis officia amet voluptate vero, velit blanditiis delectus ipsa odio impedit tempore officiis repellendus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, totam quo. Adipisci impedit soluta nemo, atque enim eveniet excepturi magni numquam laboriosam nobis dolore, quos labore animi reiciendis expedita iusto!</p>
+    </section>
+    <div class="parallaxBg">
+        <img src="https://i.ibb.co/JdcrcpS/oakland01.jpg" alt="" class="parallaximg1">
+        <h2>Left</h2>
+
+    </div>
+    <section>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore optio nam quibusdam eos modi accusantium corporis explicabo neque repellat dolorum voluptates, facilis illo, consequuntur iste veniam blanditiis harum. Dolorem beatae eaque qui quas pariatur? Sequi incidunt debitis officia amet voluptate vero, velit blanditiis delectus ipsa odio impedit tempore officiis repellendus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam sint blanditiis, dignissimos et ducimus voluptatibus sunt, incidunt reprehenderit quam provident repellat culpa obcaecati quo recusandae deleniti, corrupti minima quaerat! Inventore!</p>
+    </section>
+
+    <div class="parallaxBg">
+        <img src="https://i.ibb.co/zRrVsW4/Oakland02.jpg" alt="" class="parallaximg2">
+        <h2>Right</h2>
+    </div>
+    <section>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore optio nam quibusdam eos modi accusantium corporis explicabo neque repellat dolorum voluptates, facilis illo, consequuntur iste veniam blanditiis harum. Dolorem beatae eaque qui quas pariatur? Sequi incidunt debitis officia amet voluptate vero, velit blanditiis delectus ipsa odio impedit tempore officiis repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil excepturi mollitia quos voluptatibus obcaecati doloremque, impedit at unde molestias accusantium quisquam exercitationem et, consectetur dolorem quae. Obcaecati, rerum dolor.</p>
+    </section>
+
+    <div class="parallaxBg">
+        <img src="https://i.ibb.co/0FwCL5b/oakport.jpg" alt="" class="parallaximg3">
+        <h2>Up</h2>
+    </div>
+    <section>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore optio nam quibusdam eos modi accusantium corporis explicabo neque repellat dolorum voluptates, facilis illo, consequuntur iste veniam blanditiis harum. Dolorem beatae eaque qui quas pariatur? Sequi incidunt debitis officia amet voluptate vero, velit blanditiis delectus ipsa odio impedit tempore officiis repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam deleniti provident mollitia perspiciatis laborum amet, est dolore maxime modi ad expedita eaque labore maiores, obcaecati possimus harum totam voluptates? Velit?</p>
+    </section>
+
+    <div class="parallaxBg">
+        <img src="https://i.ibb.co/qNdbjwP/Oakland-BB3.jpg" alt="" class="parallaximg4">
+        <h2>Down</h2>
+    </div>
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore optio nam quibusdam eos modi accusantium corporis explicabo neque repellat dolorum voluptates, facilis illo, consequuntur iste veniam blanditiis harum. Dolorem beatae eaque qui quas pariatur? Sequi incidunt debitis officia amet voluptate vero, velit blanditiis delectus ipsa odio impedit tempore officiis repellendus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi earum temporibus adipisci repellendus iure, deleniti cum, explicabo consequuntur rerum, accusantium tenetur? Incidunt porro vitae accusantium harum. Assumenda odio soluta iure.</p>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+        <script>
+            var image1 = document.getElementsByClassName('parallaximg1');
+            var image2 = document.getElementsByClassName('parallaximg2');
+            var image3 = document.getElementsByClassName('parallaximg3');
+            var image4 = document.getElementsByClassName('parallaximg4');
+            new simpleParallax(image1, {
+                orientation: 'left'
+            });
+            new simpleParallax(image2, {
+                orientation: 'right'
+            });
+            new simpleParallax(image3, {
+                orientation: 'up'
+            });
+            new simpleParallax(image4, {
+                orientation: 'down'
+            });
+        </script>
+</body>
+</html>
+
+
+<!--
+    
+    INSTALLATION
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+    Initialization
+<script>
+    var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image);
+</script>
+
+-->
